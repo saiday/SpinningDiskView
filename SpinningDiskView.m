@@ -90,14 +90,12 @@
     CGContextSetLineWidth(context, self.frame.size.width / 10.0f);
     CGContextAddArc(context, center.x, center.y, center.x, 0, 2 * M_PI, 0);
     CGContextStrokePath(context);
-    CGContextClosePath(context);
     
     // inside circular
     CGContextBeginPath(context);
     CGContextSetLineWidth(context, self.frame.size.width / 40.0f);
     CGContextAddArc(context, center.x, center.y, self.frame.size.width / 10.0f, 0, 2 * M_PI, 0);
     CGContextStrokePath(context);
-    CGContextClosePath(context);
     
     // hollow center 
     CGContextSetStrokeColorWithColor(context, [[UIColor whiteColor] CGColor]);
@@ -105,7 +103,6 @@
     CGContextSetLineWidth(context, self.frame.size.width / 20.0f);
     CGContextAddArc(context, center.x, center.y, self.frame.size.width / 40.0f, 0, 2 * M_PI, 0);
     CGContextStrokePath(context);
-    CGContextClosePath(context);
     
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
