@@ -1,4 +1,4 @@
-![](docs/eagleshadow-jackiechan_ada1982a551f5ceb8d8a7bf1f005dd36.jpg)
+![](https://raw.github.com/saiday/SpinningDiskView/master/docs/SpinningDiskView.gif)
 
 # How to use #
 
